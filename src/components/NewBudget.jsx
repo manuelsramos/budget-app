@@ -36,10 +36,12 @@ const NewBudget = ({
                         onChange={e => setBudget(Number(e.target.value))}
                     />
                 </div>
-                <input
+                <button
                     type="submit"
                     value='Submit'
-                />
+                    disabled={budget < 1 ? true : false}
+
+                >Submit</button>
 
                 {message && <Message type='error'>{message}</Message>} {/* Aqui recibimos children */}
             </form>

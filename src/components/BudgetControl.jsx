@@ -43,7 +43,7 @@ export const BudgetControl = ({
 
         if (result) {
             setBudget([])
-            setExpenses(0)
+            setExpenses([])
             setValidBudget(false)
         }
     }

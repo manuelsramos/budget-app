@@ -1,8 +1,6 @@
 import React from 'react'
 import Expense from './Expense'
 
-
-
 const ExpensesList = ({
     expenses,
     setEditExpense,
@@ -10,6 +8,7 @@ const ExpensesList = ({
     filter,
     filterSpent
 }) => {
+
     return (
         <div className='expenses-list container'>
             {
