@@ -14,7 +14,7 @@ const ExpensesList = ({
             {
                 filter ? (
                     <>
-                        <h2> {filterSpent.length ? 'Expenses' : 'No expenses'} </h2>
+                        <h2 className='expenses-exist'> {filterSpent.length ? 'Expenses' : 'No expenses'} </h2>
                         {filterSpent.map(expense => (
                             <Expense
                                 key={expense.id}
@@ -26,7 +26,7 @@ const ExpensesList = ({
                     </>
                 ) : (
                     <>
-                        <h2> {expenses.length ? 'Expenses' : 'No expenses'} </h2>
+                        <h2 className='expenses-exist'> {expenses.length ? 'Expenses' : 'No expenses'} </h2>
                         {expenses.map(expense => (
                             <Expense
                                 key={expense.id}

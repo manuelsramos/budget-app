@@ -124,6 +124,7 @@ export const Modal = ({ setModal,
                 </div>
 
                 <input
+                    className='input-button-modal'
                     type="submit"
                     value={editExpense.name ? 'Save changes' : 'Add Expense'}
                 />
